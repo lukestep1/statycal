@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Statycal delivers data, cloud, security, and automation outcomes with Microsoft-aligned playbooks, case studies, and clear engagement models.">
+  <title>Statycal | Data, Cloud, Security, Automation</title>
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+  <link rel="icon" type="image/png" sizes="48x48" href="favicon-48.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="icons/icon-180.png">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#060a14">
+  <meta property="og:title" content="Statycal | Data, Cloud, Security, Automation">
+  <meta property="og:description" content="Modernize data, cloud, security, and automation with Microsoft-aligned playbooks and measurable outcomes.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://statycal.com">
+  <meta property="og:site_name" content="Statycal">
+  <meta property="og:image" content="og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Statycal | Data, Cloud, Security, Automation">
+  <meta name="twitter:description" content="Modernize data, cloud, security, and automation with Microsoft-aligned playbooks and measurable outcomes.">
+  <meta name="twitter:image" content="og-image.png">
+  <meta name="twitter:site" content="@statycal">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="preload" href="styles.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="styles.min.css"></noscript>
+  <style id="critical-styles">
+    :root { --bg:#060a14; --surface:rgba(255,255,255,0.04); --surface-strong:rgba(255,255,255,0.08); --ink:#e9edf5; --muted:#c9d4ec; --teal:#4dd7c9; --amber:#ffc857; --max-width:1200px; --transition:220ms ease;}
+    *{box-sizing:border-box;}
+    body{margin:0;font-family:'Manrope',system-ui,-apple-system,sans-serif;background:var(--bg);color:var(--ink);line-height:1.6;min-height:100vh;}
+    a{color:var(--ink);text-decoration:none;}
+    h1,h2,h3,h4{margin:0 0 12px;line-height:1.2;font-family:'Sora','Manrope',sans-serif;letter-spacing:-0.3px;}
+    p{margin:0 0 12px;color:var(--ink);}
+    .site-header{position:sticky;top:0;z-index:10;display:flex;align-items:center;justify-content:space-between;padding:18px 24px;max-width:var(--max-width);margin:0 auto;}
+    .brand{display:flex;align-items:center;gap:10px;color:var(--ink);text-decoration:none;font-weight:700;}
+    .brand img{height:28px;width:auto;display:block;}
+    .logo{font-weight:700;font-size:1.1rem;letter-spacing:0.08em;text-transform:uppercase;}
+    .nav{display:flex;align-items:center;gap:16px;}
+    .hero{max-width:var(--max-width);margin:32px auto 0;padding:48px 24px 32px;display:grid;grid-template-columns:1.1fr 0.9fr;gap:32px;align-items:center;}
+    .hero__visual{position:relative;min-height:320px;border-radius:18px;border:1px solid rgba(255,255,255,0.08);padding:18px;display:flex;align-items:flex-end;justify-content:flex-end;overflow:hidden;background:transparent;}
+    .hero__image{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.8;display:none;}
+    .hero__panel{position:relative;z-index:1;width:100%;}
+    .hero__actions{display:flex;flex-wrap:wrap;gap:12px;margin:22px 0 18px;}
+    .btn{display:inline-flex;align-items:center;gap:8px;padding:12px 18px;border-radius:10px;font-weight:600;cursor:pointer;border:1px solid transparent;transition:transform var(--transition),box-shadow var(--transition);}
+    .btn.primary{background:linear-gradient(135deg,var(--teal),var(--amber));color:#0c111f;}
+    .btn.ghost{border-color:var(--surface-strong);color:var(--ink);background:transparent;}
+    .pill{background:linear-gradient(135deg,#1cb4a5,#4dd7c9);color:#04121c;border-radius:999px;padding:12px 18px;font-weight:700;font-size:.95rem;box-shadow:0 12px 28px rgba(28,180,165,.25);}
+    .skip-link{position:absolute;left:-999px;top:8px;background:#111a2f;color:var(--ink);padding:10px 14px;border-radius:8px;z-index:20;}
+    .skip-link:focus-visible{left:16px;outline:2px solid var(--teal);}
+    main{display:block;}
+  </style>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Statycal",
+      "url": "https://statycal.com",
+      "logo": "favicon-48.png",
+      "sameAs": [
+        "https://www.linkedin.com/company/statycal",
+        "https://twitter.com/statycal"
+      ],
+      "contactPoint": [{
+        "@type": "ContactPoint",
+        "email": "hello@statycal.com",
+        "contactType": "sales"
+      }]
+    }
+  </script>
+</head>
+<body data-decorative="off">
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <header class="site-header">
+    <a class="brand" href="#hero" aria-label="Statycal home">
+      <img src="assets/logo-mark.png" alt="Statycal symbol logo" decoding="async" loading="lazy" width="28" height="28">
+      <span class="logo">Statycal</span>
+    </a>
+    <nav id="nav" class="nav">
+      <a href="#services">Services</a>
+      <a href="#playbooks">Playbooks</a>
+      <a href="#case-studies">Case Studies</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#microsoft">Microsoft</a>
+      <a href="#resources">Resources</a>
+      <a href="#careers">Careers</a>
+      <a href="#contact" class="pill">Book a consult</a>
+    </nav>
+    <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav">
+      <span></span>
+      <span></span>
+    </button>
+  </header>
+
+  <main id="main-content" role="main" tabindex="-1">
+    <section id="hero" class="hero">
+      <div class="hero__content" data-animate>
+        <p class="eyebrow">Data · Cloud · Security · Automation</p>
+        <h1>Enterprise outcomes without the enterprise drag.</h1>
+        <p class="lede">
+          Statycal modernizes data estates, fortifies cloud and identity, and launches automation copilots with playbooks proven in regulated environments.
+        </p>
+        <div class="hero__actions">
+          <a class="btn primary" href="#contact">Request a consultation</a>
+          <a class="btn ghost" href="assets/statycal-data-modernization-one-pager.pdf" target="_blank" rel="noreferrer">Download data one-pager</a>
+        </div>
+        <div class="hero__meta">
+          <div>
+            <span class="meta-label">Engagement models</span>
+            <p>Project · Retainer · Time &amp; Materials</p>
+          </div>
+          <div>
+            <span class="meta-label">Compliance depth</span>
+            <p>OSFI · PCI DSS · SOC2-ready</p>
+          </div>
+          <div>
+            <span class="meta-label">Cloud expertise</span>
+            <p>Azure · AWS · Power Platform · M365</p>
+          </div>
+        </div>
+      </div>
+      <div class="hero__visual">
+        <img src="assets/hero-visual.svg" class="hero__image" alt="" role="presentation" decoding="async" loading="lazy">
+        <div class="hero__panel" data-animate>
+          <div class="panel">
+            <p class="panel__title">Outcome dashboard</p>
+            <div class="panel__stats">
+              <div>
+                <span>Cost to serve</span>
+                <strong>↓ 27%</strong>
+                <small>through automation &amp; cloud FinOps</small>
+              </div>
+              <div>
+                <span>Time to decision</span>
+                <strong>↑ 3.1x</strong>
+                <small>new BI layer with governed metrics</small>
+              </div>
+            </div>
+            <div class="progress">
+              <span>Security hardening</span>
+              <div class="progress__bar">
+                <div style="width: 78%"></div>
+              </div>
+              <small>IAM + PAM uplift aligned to CIS controls</small>
+            </div>
+            <div class="stack-tags">
+              <span>Azure</span><span>Power BI</span><span>CyberArk</span><span>Databricks</span><span>AI copilots</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="decor-toggle" data-animate>
+        <label for="decor-toggle">
+          <input type="checkbox" id="decor-toggle" name="decor-toggle">
+          Show decorative background
+        </label>
+        <p class="muted small hint">Toggle for experiments; can also be set via CMS to keep the panel clean by default.</p>
+      </div>
+    </section>
+
+    <section id="services" class="section">
+      <div class="section__header">
+        <p class="eyebrow">Services</p>
+        <h2>Data, cloud, security, and automation built for scale.</h2>
+        <p class="section__lede">Clear offers, accountable outcomes, transparent pricing models.</p>
+      </div>
+      <div class="grid services">
+        <article class="card" data-animate>
+          <div class="card__icon">📈</div>
+          <h3>Data &amp; Analytics</h3>
+          <p>Engineering, warehousing, BI, and governed metrics to modernize your stack.</p>
+          <ul>
+            <li>Lakehouse &amp; ETL modernization</li>
+            <li>Power BI / Tableau semantic layers</li>
+            <li>Data quality, lineage, and stewardship</li>
+            <li>Executive-ready dashboards</li>
+          </ul>
+          <div class="card__cta">
+          <a href="assets/statycal-data-modernization-one-pager.pdf" target="_blank" rel="noreferrer" class="link">Download capabilities one-pager</a>
+          </div>
+        </article>
+        <article class="card" data-animate>
+          <div class="card__icon">☁️</div>
+          <h3>Cloud &amp; Infrastructure</h3>
+          <p>Azure and AWS modernization with migration runbooks and cost controls.</p>
+          <ul>
+            <li>Landing zones, identity, networking</li>
+            <li>Containerization &amp; serverless adoption</li>
+            <li>FinOps reviews and right-sizing</li>
+            <li>Disaster recovery design</li>
+          </ul>
+          <div class="card__cta">
+            <span class="pill-outline">Project · Retainer · T&amp;M</span>
+          </div>
+        </article>
+        <article class="card" data-animate>
+          <div class="card__icon">🛡️</div>
+          <h3>Cybersecurity &amp; Compliance</h3>
+          <p>Identity-first security, PAM/IAM, and governance for regulated environments.</p>
+          <ul>
+            <li>CyberArk design and operations</li>
+            <li>Zero Trust &amp; MFA rollouts</li>
+            <li>Regulatory alignment: OSFI, PCI DSS, SOC2</li>
+            <li>Red/blue team tabletop readiness</li>
+          </ul>
+          <div class="card__cta">
+            <span class="pill-outline">Security hardening playbooks</span>
+          </div>
+        </article>
+        <article class="card" data-animate>
+          <div class="card__icon">🤖</div>
+          <h3>Automation &amp; AI Integration</h3>
+          <p>Workflow automation, RPA, and copilots that respect your existing architecture.</p>
+          <ul>
+            <li>Process discovery and ROI modeling</li>
+            <li>RPA/PAA bots and governance</li>
+            <li>AI copilot pilots with safety guardrails</li>
+            <li>System integration and change management</li>
+          </ul>
+          <div class="card__cta">
+            <span class="pill-outline">Pilot in 6 weeks</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section spotlight" id="playbooks">
+      <div class="section__header">
+        <p class="eyebrow">Solution playbooks</p>
+        <h2>Pre-packaged accelerators with clear timelines and deliverables.</h2>
+      </div>
+      <div class="grid playbooks">
+        <article class="card" data-animate>
+          <h3>Data Migration Accelerator</h3>
+          <p class="muted">8 weeks · Azure &amp; Power BI</p>
+          <ul>
+            <li>Landing zone + ingestion pipelines</li>
+            <li>Curated semantic model and KPI catalog</li>
+            <li>Executive dashboard bundle</li>
+          </ul>
+          <div class="timeline">
+            <span>Week 2: Foundations</span>
+            <span>Week 5: Data ready</span>
+            <span>Week 8: Dashboards live</span>
+          </div>
+        </article>
+        <article class="card" data-animate>
+          <h3>Cloud Modernization Kit</h3>
+          <p class="muted">10 weeks · Azure/AWS</p>
+          <ul>
+            <li>Refactor to containers/serverless</li>
+            <li>Observability &amp; runbooks</li>
+            <li>FinOps review with savings targets</li>
+          </ul>
+          <div class="timeline">
+            <span>Week 3: Target architecture</span>
+            <span>Week 6: Pilot workloads</span>
+            <span>Week 10: Cutover</span>
+          </div>
+        </article>
+        <article class="card" data-animate>
+          <h3>Security Hardening Sprint</h3>
+          <p class="muted">6 weeks · IAM &amp; PAM</p>
+          <ul>
+            <li>MFA, conditional access, Just-In-Time</li>
+            <li>PAM runbooks and vault setup</li>
+            <li>Compliance evidence pack</li>
+          </ul>
+          <div class="timeline">
+            <span>Week 1: Risk triage</span>
+            <span>Week 3: Controls deployed</span>
+            <span>Week 6: Audit package</span>
+          </div>
+        </article>
+        <article class="card" data-animate>
+          <h3>Automation Launchpad</h3>
+          <p class="muted">6 weeks · AI/RPA</p>
+          <ul>
+            <li>Process discovery and ROI</li>
+            <li>Bot build + human-in-loop guardrails</li>
+            <li>Change readiness toolkit</li>
+          </ul>
+          <div class="timeline">
+            <span>Week 2: Candidate map</span>
+            <span>Week 4: Bot in pilot</span>
+            <span>Week 6: Scale plan</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="pricing" class="section">
+      <div class="section__header">
+        <p class="eyebrow">Pricing &amp; engagement</p>
+        <h2>Transparent tiers with clear ownership.</h2>
+        <p class="section__lede">Choose what fits — project-based, retainer, or time &amp; materials.</p>
+      </div>
+      <div class="grid pricing">
+        <article class="card" data-animate>
+          <h3>Starter</h3>
+          <p class="muted">For scoped pilots and assessments.</p>
+          <ul>
+            <li>Discovery + blueprint</li>
+            <li>4–6 week delivery window</li>
+            <li>Executive readouts</li>
+          </ul>
+          <div class="price-tag">From $12k</div>
+        </article>
+        <article class="card" data-animate>
+          <h3>Growth</h3>
+          <p class="muted">For departmental rollouts.</p>
+          <ul>
+            <li>Dedicated engagement lead</li>
+            <li>Flexible sprint cadence</li>
+            <li>Runbooks + hypercare</li>
+          </ul>
+          <div class="price-tag">From $28k</div>
+        </article>
+        <article class="card" data-animate>
+          <h3>Enterprise</h3>
+          <p class="muted">For multi-workstream programs.</p>
+          <ul>
+            <li>Program governance and PMO</li>
+            <li>Security and compliance alignment</li>
+            <li>Quarterly value reviews</li>
+          </ul>
+          <div class="price-tag">Custom</div>
+        </article>
+        <article class="card card--accent" data-animate>
+          <h3>Need flexibility?</h3>
+          <p class="muted">We support rate cards and co-delivery teams.</p>
+          <ul>
+            <li>Time &amp; materials with ceilings</li>
+            <li>Hybrid squad/staff augmentation</li>
+            <li>Outcome-based incentives</li>
+          </ul>
+          <a class="btn secondary" href="#contact">Talk to delivery</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="case-studies" class="section spotlight">
+      <div class="section__header">
+        <p class="eyebrow">Case studies</p>
+        <h2>Proof through measurable outcomes.</h2>
+        <p class="section__lede">Anonymized but quantifiable results across regulated industries.</p>
+      </div>
+      <div class="grid cases">
+        <article class="card" data-animate>
+          <p class="muted">Financial Services · Cloud &amp; Security</p>
+          <h3>Regulated cloud migration</h3>
+          <p>Azure landing zone, IAM uplift, and PCI-aligned controls for a national payments provider.</p>
+          <div class="metrics">
+            <span>99.95% uptime</span>
+            <span>-32% infra spend</span>
+            <span>PCI audit ready</span>
+          </div>
+        </article>
+        <article class="card" data-animate>
+          <p class="muted">Public Sector · Data &amp; Analytics</p>
+          <h3>Unified BI for operations</h3>
+          <p>Built a lakehouse with governed metrics and Power BI dashboards for 40+ field teams.</p>
+          <div class="metrics">
+            <span>3.4x faster decisions</span>
+            <span>Single source of truth</span>
+            <span>Audit trail with lineage</span>
+          </div>
+        </article>
+        <article class="card" data-animate>
+          <p class="muted">Manufacturing · Automation</p>
+          <h3>RPA + AI copilots</h3>
+          <p>Automated order entry and created an AI copilot for supply chain planners.</p>
+          <div class="metrics">
+            <span>-22% manual hours</span>
+            <span>Zero disruption cutover</span>
+            <span>ROI in 5 months</span>
+          </div>
+        </article>
+      </div>
+      <div class="cta-bar" data-animate>
+        <div>
+          <p class="eyebrow">Need specifics?</p>
+          <h3>We can provide fully attributed references under NDA.</h3>
+        </div>
+        <a class="btn primary" href="#contact">Request references</a>
+      </div>
+    </section>
+
+    <section id="microsoft" class="section">
+      <div class="section__header">
+        <p class="eyebrow">Microsoft alignment</p>
+        <h2>Certified expertise across Azure, Power Platform, and Security.</h2>
+      </div>
+      <div class="grid microsoft">
+        <article class="card" data-animate>
+          <h3>Cloud specialization</h3>
+          <p>Azure &amp; AWS migration, Kubernetes, serverless, DevOps automation.</p>
+          <div class="stack-tags">
+            <span>Azure</span><span>AKS</span><span>App Services</span><span>ARM/Bicep</span>
+          </div>
+        </article>
+        <article class="card" data-animate>
+          <h3>Data &amp; AI</h3>
+          <p>Power BI, Fabric, Databricks, Synapse — from engineering to governed insights.</p>
+          <div class="stack-tags">
+            <span>Fabric</span><span>Synapse</span><span>Power BI</span><span>Purview</span>
+          </div>
+        </article>
+        <article class="card" data-animate>
+          <h3>Security</h3>
+          <p>M365 E5, Entra ID, Defender stack, PAM/IAM with CyberArk.</p>
+          <div class="stack-tags">
+            <span>Entra</span><span>Defender</span><span>CyberArk</span><span>WAF</span>
+          </div>
+        </article>
+      </div>
+      <div class="playbook-note" data-animate>
+        <p class="eyebrow">Solution playbooks</p>
+        <div class="note-grid">
+          <div>
+            <h4>Data Migration Accelerator</h4>
+            <p>Fabric/Power BI-first delivery with compliance-ready lineage.</p>
+          </div>
+          <div>
+            <h4>Cloud Modernization Kit</h4>
+            <p>Landing zones, app refactoring, and FinOps guardrails.</p>
+          </div>
+          <div>
+            <h4>Security Hardening Sprint</h4>
+            <p>Identity, PAM, and WAF controls mapped to CIS benchmarks.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="resources" class="section spotlight">
+      <div class="section__header">
+        <p class="eyebrow">Resources &amp; insights</p>
+        <h2>Templates, guides, and thought leadership.</h2>
+      </div>
+      <div class="grid resources">
+        <article class="card" data-animate>
+          <h3>Security governance guide</h3>
+          <p>How we align to OSFI, PCI DSS, and SOC2 with evidence packs.</p>
+          <a class="link" href="#contact">Request guide</a>
+        </article>
+        <article class="card" data-animate>
+          <h3>Data/BA template pack</h3>
+          <p>Requirements, KPI definitions, and acceptance patterns.</p>
+          <a class="link" href="#contact">Get templates</a>
+        </article>
+        <article class="card" data-animate>
+          <h3>AI copilot safety checklist</h3>
+          <p>Guardrails for pilots and production deployments.</p>
+          <a class="link" href="#contact">Download checklist</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="testimonials" class="section">
+      <div class="section__header">
+        <p class="eyebrow">Testimonials</p>
+        <h2>What partners say.</h2>
+      </div>
+      <div class="grid testimonials">
+        <article class="card" data-animate>
+          <p class="quote">“Statycal landed our Azure migration and IAM uplift with zero business disruption.”</p>
+          <p class="muted">VP Technology, Financial Services</p>
+        </article>
+        <article class="card" data-animate>
+          <p class="quote">“The BI playbook gave our leaders a single version of the truth in six weeks.”</p>
+          <p class="muted">COO, Public Sector Agency</p>
+        </article>
+        <article class="card" data-animate>
+          <p class="quote">“They balanced security with velocity — automation ROI was clear inside the quarter.”</p>
+          <p class="muted">Director of Operations, Manufacturing</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="analytics" class="section spotlight">
+      <div class="section__header">
+        <p class="eyebrow">Instrumentation</p>
+        <h2>Built-in analytics so you can see what converts.</h2>
+      </div>
+      <div class="grid analytics">
+        <article class="card" data-animate>
+          <h3>Visibility</h3>
+          <p>Page views, source tracking, and form conversions ready for GA, LinkedIn Insight Tag, and MS Clarity.</p>
+        </article>
+        <article class="card" data-animate>
+          <h3>Governance</h3>
+          <p>Consent-aware tracking with PII-safe defaults and exportable reports.</p>
+        </article>
+        <article class="card" data-animate>
+          <h3>Activation</h3>
+          <p>Conversion pixels included on pricing and contact CTAs to measure funnel performance.</p>
+        </article>
+        <article class="card" data-animate>
+          <h3>CMS-ready</h3>
+          <p>Headless CMS integration (Sanity, Contentful, or SharePoint) with roles so marketing can update content without code.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="careers" class="section">
+      <div class="section__header">
+        <p class="eyebrow">Careers</p>
+        <h2>Join the Statycal team.</h2>
+      </div>
+      <div class="careers">
+        <article class="card" data-animate>
+          <h3>Data Engineer</h3>
+          <p class="muted">Azure, Fabric, Python</p>
+          <p>Own ingestion pipelines, quality, and semantic models.</p>
+          <a class="link" href="#contact">Apply</a>
+        </article>
+        <article class="card" data-animate>
+          <h3>Cloud Architect</h3>
+          <p class="muted">Azure/AWS, Kubernetes</p>
+          <p>Design resilient landing zones and modernization roadmaps.</p>
+          <a class="link" href="#contact">Apply</a>
+        </article>
+        <article class="card" data-animate>
+          <h3>Security Engineer</h3>
+          <p class="muted">CyberArk, Entra ID, WAF</p>
+          <p>Lead IAM/PAM hardening across regulated clients.</p>
+          <a class="link" href="#contact">Apply</a>
+        </article>
+        <article class="card" data-animate>
+          <h3>Automation Specialist</h3>
+          <p class="muted">RPA, AI copilots</p>
+          <p>Ship bots with measurable ROI and human-in-loop guardrails.</p>
+          <a class="link" href="#contact">Apply</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="section spotlight contact">
+      <div class="section__header">
+        <p class="eyebrow">Get started</p>
+        <h2>Request a consultation.</h2>
+        <p class="section__lede">Tell us about your goals — data, cloud, security, or automation.</p>
+      </div>
+      <div class="contact__grid">
+        <form id="contact-form" class="card" data-animate action="https://formspree.io/f/mldevpgn" method="POST" novalidate>
+          <input type="text" name="website" tabindex="-1" autocomplete="off" class="hidden-field" aria-hidden="true">
+          <input type="hidden" name="source" value="website-contact">
+          <input type="hidden" name="submittedAt" id="submittedAt" value="">
+          <label>
+            Name
+            <input type="text" name="name" required>
+          </label>
+          <label>
+            Work email
+            <input type="email" name="email" required>
+          </label>
+          <label>
+            Company
+            <input type="text" name="company" required>
+          </label>
+          <label>
+            What do you need help with?
+            <select name="focus" required>
+              <option value="">Choose an area</option>
+              <option>Data &amp; Analytics</option>
+              <option>Cloud &amp; Infrastructure</option>
+              <option>Cybersecurity</option>
+              <option>Automation &amp; AI</option>
+              <option>Pricing/Engagement</option>
+            </select>
+          </label>
+          <label>
+            Message
+            <textarea name="message" rows="4" placeholder="Goals, timelines, constraints" required></textarea>
+          </label>
+          <button type="submit" class="btn primary full">Send request</button>
+          <p class="muted small">We respond within one business day. Data is stored securely and not shared.</p>
+        </form>
+        <div class="card contact__info" data-animate>
+          <div>
+            <h3>Direct line</h3>
+            <p>hello@statycal.com</p>
+          </div>
+          <div>
+            <h3>Engagement types</h3>
+            <p>Project delivery, retainers, time &amp; materials, co-delivery squads.</p>
+          </div>
+          <div>
+            <h3>Security &amp; compliance</h3>
+            <p>Encryption in transit, WAF on all forms, input validation, and consent-aware analytics.</p>
+          </div>
+          <div>
+            <h3>Accessibility</h3>
+            <p>WCAG 2.1 AA patterns — contrast-checked palette, keyboard-friendly navigation, and labeled form fields.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__brand">
+      <div class="logo">Statycal</div>
+      <p>Modern data, cloud, security, and automation delivery.</p>
+    </div>
+    <div class="footer__links">
+      <a href="#services">Services</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#case-studies">Case studies</a>
+      <a href="#resources">Resources</a>
+      <a href="#careers">Careers</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </footer>
+
+  <script src="script.min.js" defer></script>
+</body>
+</html>

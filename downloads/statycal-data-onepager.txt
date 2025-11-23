@@ -1,0 +1,23 @@
+Statycal Data & Analytics One-Pager
+-----------------------------------
+
+What we deliver
+- Lakehouse architecture on Azure Fabric/Synapse or Databricks with governed layers.
+- Ingestion pipelines with testing, lineage, and data quality scores.
+- Curated semantic models for Power BI/Tableau with reusable KPI catalog.
+- Executive dashboards and self-serve enablement for business teams.
+
+Engagement options
+- Starter assessment (4–6 weeks) with blueprint, quick wins, and target state.
+- Migration accelerator (8 weeks) to move core data to the lakehouse and ship dashboards.
+- Co-delivery squads on retainer or time & materials for sustained velocity.
+
+Compliance & Security
+- Controls mapped to OSFI, PCI DSS, and SOC2 practices.
+- Role-based data access, encryption in transit/at rest, and audit-ready logging.
+
+Tooling & Stack Examples
+- Azure Fabric, Synapse, Databricks, Power BI, Purview, dbt, Fivetran.
+
+Contact
+hello@statycal.com  |  statycal.com

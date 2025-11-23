@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Statycal">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="64" y2="64" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#4DD7C9"/>
+      <stop offset="1" stop-color="#6C7DFF"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="14" fill="#0A1124"/>
+  <rect x="8" y="8" width="48" height="48" rx="12" fill="url(#g)" opacity="0.2"/>
+  <path d="M18 38c4-4 8.5-6 14-6s10 2 14 6" stroke="#FFC857" stroke-width="4" stroke-linecap="round" opacity="0.8"/>
+  <path d="M22 30c3-3 7-5 12-5s9 2 12 5" stroke="#4DD7C9" stroke-width="4" stroke-linecap="round" opacity="0.9"/>
+  <circle cx="22" cy="26" r="3" fill="#4DD7C9"/>
+  <circle cx="32" cy="22" r="3" fill="#6C7DFF"/>
+  <circle cx="42" cy="26" r="3" fill="#FFC857"/>
+</svg>
