@@ -546,9 +546,11 @@
         <p class="section__lede">Tell us about your goals — data, cloud, security, or automation.</p>
       </div>
       <div class="contact__grid">
-        <form id="contact-form" class="card" data-animate action="https://formspree.io/f/mldevpgn" method="POST" novalidate>
+        <form id="contact-form" class="card" data-animate action="https://formspree.io/f/mwpjldlb" data-form-endpoint="https://formspree.io/f/mwpjldlb" data-mailto="mailto:hello@statycal.com?subject=Consultation%20request%20from%20Statycal%20website" method="POST" novalidate>
           <input type="text" name="website" tabindex="-1" autocomplete="off" class="hidden-field" aria-hidden="true">
-          <input type="hidden" name="source" value="website-contact">
+          <input type="hidden" name="form_id" value="website-contact">
+          <input type="hidden" name="subject" value="Statycal consultation request">
+          <input type="hidden" name="recipient" value="hello@statycal.com">
           <input type="hidden" name="submittedAt" id="submittedAt" value="">
           <label>
             Name
@@ -560,17 +562,17 @@
           </label>
           <label>
             Company
-            <input type="text" name="company" required>
+            <input type="text" name="company">
           </label>
           <label>
             What do you need help with?
-            <select name="focus" required>
+            <select name="topic" required>
               <option value="">Choose an area</option>
-              <option>Data &amp; Analytics</option>
-              <option>Cloud &amp; Infrastructure</option>
-              <option>Cybersecurity</option>
-              <option>Automation &amp; AI</option>
-              <option>Pricing/Engagement</option>
+              <option value="Data &amp; Analytics">Data &amp; Analytics</option>
+              <option value="Cloud &amp; Infrastructure">Cloud &amp; Infrastructure</option>
+              <option value="Cybersecurity">Cybersecurity</option>
+              <option value="Automation &amp; AI">Automation &amp; AI</option>
+              <option value="Pricing/Engagement">Pricing/Engagement</option>
             </select>
           </label>
           <label>

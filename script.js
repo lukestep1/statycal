@@ -116,6 +116,8 @@ if (form) {
   const honeypot = form.querySelector('input[name=\"website\"]');
   const timestampField = document.getElementById('submittedAt');
   const formLoadTime = Date.now();
+  const mailtoFallback = form.dataset.mailto || 'mailto:hello@statycal.com?subject=Consultation%20request';
+  const endpoint = form.dataset.formEndpoint || form.action;
 
   form.addEventListener('submit', async event => {
     event.preventDefault();
@@ -130,6 +132,25 @@ if (form) {
     const existing = form.querySelector('.form-status');
     if (existing) existing.remove();
 
+    const emailField = form.querySelector('input[name=\"email\"]');
+    const nameField = form.querySelector('input[name=\"name\"]');
+    const messageField = form.querySelector('textarea[name=\"message\"]');
+    const topicField = form.querySelector('select[name=\"topic\"]');
+    const emailValid = emailField && /^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$/.test(emailField.value.trim());
+    const nameValid = nameField && nameField.value.trim().length > 1;
+    const messageValid = messageField && messageField.value.trim().length > 5;
+    const topicValid = topicField && topicField.value.trim().length > 0;
+
+    if (!emailValid || !nameValid || !messageValid || !topicValid) {
+      const note = document.createElement('p');
+      note.className = 'muted small form-status error';
+      note.setAttribute('role', 'status');
+      note.textContent = 'Please complete name, a valid work email, topic, and a short message.';
+      form.appendChild(note);
+      (nameField || emailField || topicField || messageField)?.focus();
+      return;
+    }
+
     if (timestampField) timestampField.value = new Date().toISOString();
 
     button.disabled = true;
@@ -139,7 +160,7 @@ if (form) {
     let success = false;
 
     try {
-      const response = await fetch(form.action, {
+      const response = await fetch(endpoint, {
         method: form.method || 'POST',
         headers: { Accept: 'application/json' },
         body: data
@@ -166,7 +187,7 @@ if (form) {
         // localStorage unavailable
       }
     } else {
-      note.textContent = 'We could not submit right now. Please retry or email hello@statycal.com.';
+      note.innerHTML = 'We could not submit right now. Please retry or <a class=\"link\" href=\"' + mailtoFallback + '\">email hello@statycal.com</a>.';
       note.classList.add('error');
     }
 
