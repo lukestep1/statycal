@@ -115,6 +115,7 @@ const form = document.getElementById('contact-form');
 if (form) {
   const honeypot = form.querySelector('input[name=\"website\"]');
   const timestampField = document.getElementById('submittedAt');
+  const replyToField = document.getElementById('replytoField');
   const formLoadTime = Date.now();
   const mailtoFallback = form.dataset.mailto || 'mailto:hello@statycal.com?subject=Consultation%20request';
   const endpoint = form.dataset.formEndpoint || form.action;
@@ -152,6 +153,7 @@ if (form) {
     }
 
     if (timestampField) timestampField.value = new Date().toISOString();
+    if (replyToField && emailField) replyToField.value = emailField.value.trim();
 
     button.disabled = true;
     button.textContent = 'Sending...';
