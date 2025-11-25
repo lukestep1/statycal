@@ -546,23 +546,21 @@
         <p class="section__lede">Tell us about your goals — data, cloud, security, or automation.</p>
       </div>
       <div class="contact__grid">
-        <form id="contact-form" class="card" data-animate action="https://formspree.io/f/mwpjldlb" data-form-endpoint="https://formspree.io/f/mwpjldlb" data-mailto="mailto:hello@statycal.com?subject=Consultation%20request%20from%20Statycal%20website" method="POST" novalidate>
-          <input type="text" name="website" tabindex="-1" autocomplete="off" class="hidden-field" aria-hidden="true">
+        <form id="contact-form" class="card" data-animate action="https://formspree.io/f/mwpjldlb" data-form-endpoint="https://formspree.io/f/mwpjldlb" data-mailto="mailto:hello@statycal.com?subject=Consultation%20request%20from%20Statycal%20website" method="POST" style="display: grid; gap: 1rem;">
           <input type="hidden" name="form_id" value="website-contact">
-          <input type="hidden" name="_subject" value="Statycal consultation request">
-          <input type="hidden" name="_replyto" id="replytoField" value="">
-          <input type="hidden" name="submittedAt" id="submittedAt" value="">
+          <input type="hidden" name="subject" value="Statycal consultation request">
+          <input type="hidden" name="recipient" value="hello@statycal.com">
           <label>
             Name
-            <input type="text" name="name" required>
+            <input type="text" name="name" required autocomplete="name">
           </label>
           <label>
             Work email
-            <input type="email" name="email" required>
+            <input type="email" name="email" required autocomplete="email">
           </label>
           <label>
             Company
-            <input type="text" name="company">
+            <input type="text" name="company" autocomplete="organization">
           </label>
           <label>
             What do you need help with?
@@ -577,11 +575,13 @@
           </label>
           <label>
             Message
-            <textarea name="message" rows="4" placeholder="Goals, timelines, constraints" required></textarea>
+            <textarea name="message" required></textarea>
           </label>
-          <button type="submit" class="btn primary full">Send request</button>
-          <p class="muted small">We respond within one business day. Data is stored securely and not shared.</p>
+          <button type="submit" class="btn primary full">
+            Send request
+          </button>
         </form>
+        <p class="muted small">We respond within one business day. Data is stored securely and not shared.</p>
         <div class="card contact__info" data-animate>
           <div>
             <h3>Direct line</h3>
