@@ -1,0 +1,59 @@
+Open the file `index.html`.
+
+Locate the entire contact form block starting with:
+
+    <input type="text" value=""/>
+
+and ending with:
+
+    <button>Send request</button>
+
+Delete that entire block.
+
+Replace it with the following fully working Formspree-backed form:
+
+    <form action="https://formspree.io/f/mwpjldlb" method="POST" style="display: grid; gap: 1rem;">
+
+      <input type="hidden" name="form_id" value="website-contact" />
+      <input type="hidden" name="subject" value="Statycal consultation request" />
+      <input type="hidden" name="recipient" value="hello@statycal.com" />
+
+      <label>
+        Name
+        <input type="text" name="name" required autocomplete="name" />
+      </label>
+
+      <label>
+        Work email
+        <input type="email" name="email" required autocomplete="email" />
+      </label>
+
+      <label>
+        Company
+        <input type="text" name="company" autocomplete="organization" />
+      </label>
+
+      <label>
+        What do you need help with?
+        <select name="topic" required>
+          <option value="">Choose an area</option>
+          <option value="Data & Analytics">Data & Analytics</option>
+          <option value="Cloud & Infrastructure">Cloud & Infrastructure</option>
+          <option value="Cybersecurity">Cybersecurity</option>
+          <option value="Automation & AI">Automation & AI</option>
+          <option value="Pricing/Engagement">Pricing/Engagement</option>
+        </select>
+      </label>
+
+      <label>
+        Message
+        <textarea name="message" required></textarea>
+      </label>
+
+      <button type="submit" class="btn primary full">
+        Send request
+      </button>
+
+    </form>
+
+Save the file.
